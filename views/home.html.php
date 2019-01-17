@@ -100,7 +100,7 @@
                                 <div class="card mb-4 shadow-sm">
                                     <img src ="../photo martinique/france2.png"height="100%" width="100%"</img>
                                     <div class="card-body">
-                                        <p class="card-text">TLes sites naturels ou urbains remarquables sont innombrables en France. Et d’une très grande variété étant donné la géographie et l’histoire de notre pays
+                                        <p class="card-text">Les sites naturels ou urbains remarquables sont innombrables en France. Et d’une très grande variété étant donné la géographie et l’histoire de notre pays
 
                                             En voici une sélection qui va de la mer du Nord aux Pyrénées, des Vosges à la Provence et la Cote d’Azur, de la Bretagne à l’Alsace, des plages de l’Atlantique aux sommets des Alpes, en passant par Paris, les châteaux de la Loire, les vignobles bourguignons .....</p>
                                         <div class="d-flex justify-content-between align-items-center">
