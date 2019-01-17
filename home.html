@@ -41,65 +41,20 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto" focusable="false" role="img"><title>Product</title><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
         </a>
 
-        <a class="py-2 d-none d-md-inline-block" href="#">Nice day</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">A propos de nous </a>
         <a class="py-2 d-none d-md-inline-block" href="#">Acceuil</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">se connecter</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Se connecter</a>
 
     </div>
 </nav>
 
-<div class="container-fluid">
-    <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-            <div class="sidebar-sticky">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span data-feather="home"></span>
-                            Dashboard <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file"></span>
-                            Orders
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="shopping-cart"></span>
-                            Products
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="users"></span>
-                            Customers
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="bar-chart-2"></span>
-                            Reports
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="layers"></span>
-                            Integrations
-                        </a>
-                    </li>
-                </ul>
 
-
-            </div>
-        </nav>
 
 
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
         <h1 class="display-4 font-weight-normal">Realise ton rêve! </h1>
-        <p class="lead font-weight-normal">vous avez de l'argent ? ou PAS ?! Notre agence va vous aider à choisir LE voyage qui vous corresponderez le mieux :) </p>
+        <p class="lead font-weight-normal">vous avez de l'argent ? ou PAS ?! Notre agence va vous aider à choisir LE voyage qui vous corresponds le mieux :) </p>
         <a class="btn btn-outline-secondary" href="#">Coming soon</a>
     </div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
