@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mer. 16 jan. 2019 à 15:44
+-- Généré le :  jeu. 17 jan. 2019 à 10:18
 -- Version du serveur :  10.1.36-MariaDB
 -- Version de PHP :  7.2.11
 
@@ -25,41 +25,22 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `airport`
+-- Structure de la table `pays`
 --
 
-CREATE TABLE `airport` (
+CREATE TABLE `pays` (
   `id` int(10) UNSIGNED NOT NULL,
   `nom` char(20) NOT NULL,
-  `ville_id` int(10) UNSIGNED NOT NULL
+  `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `airport`
+-- Déchargement des données de la table `pays`
 --
 
-INSERT INTO `airport` (`id`, `nom`, `ville_id`) VALUES
-(1, 'Marignane', 1),
-(2, 'Aime Cesaire', 2);
-
--- --------------------------------------------------------
-
---
--- Structure de la table `gare`
---
-
-CREATE TABLE `gare` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `nom` char(20) NOT NULL,
-  `ville_id` int(10) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Déchargement des données de la table `gare`
---
-
-INSERT INTO `gare` (`id`, `nom`, `ville_id`) VALUES
-(1, 'St-Charles', 1);
+INSERT INTO `pays` (`id`, `nom`, `description`) VALUES
+(1, 'France', 'et 1 et 2 et 3 zéro!!!'),
+(2, 'Martinique', 'zoul la c sel médikament nous ni!\r\nbienvenue sur l\'ile aux fleurs en mer des caraibes....\r\n');
 
 -- --------------------------------------------------------
 
@@ -82,34 +63,27 @@ CREATE TABLE `user` (
 CREATE TABLE `ville` (
   `id` int(10) UNSIGNED NOT NULL,
   `nom` char(20) NOT NULL,
-  `description` text NOT NULL
+  `description` text NOT NULL,
+  `pays_id` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `ville`
 --
 
-INSERT INTO `ville` (`id`, `nom`, `description`) VALUES
-(1, 'Marseille', 'Belle Belle belle cette ville dus sud'),
-(2, 'Fort de france', 'situé dans la caraibe bla bla bla....');
+INSERT INTO `ville` (`id`, `nom`, `description`, `pays_id`) VALUES
+(1, 'Marseille', 'Belle Belle belle cette ville dus sud', 1),
+(2, 'Fort de france', 'situé dans la caraibe bla bla bla....', 2);
 
 --
 -- Index pour les tables déchargées
 --
 
 --
--- Index pour la table `airport`
+-- Index pour la table `pays`
 --
-ALTER TABLE `airport`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `ville_id` (`ville_id`);
-
---
--- Index pour la table `gare`
---
-ALTER TABLE `gare`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `ville_id` (`ville_id`);
+ALTER TABLE `pays`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `user`
@@ -121,23 +95,18 @@ ALTER TABLE `user`
 -- Index pour la table `ville`
 --
 ALTER TABLE `ville`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `pays_id` (`pays_id`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT pour la table `airport`
+-- AUTO_INCREMENT pour la table `pays`
 --
-ALTER TABLE `airport`
+ALTER TABLE `pays`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT pour la table `gare`
---
-ALTER TABLE `gare`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `user`
@@ -156,16 +125,10 @@ ALTER TABLE `ville`
 --
 
 --
--- Contraintes pour la table `airport`
+-- Contraintes pour la table `ville`
 --
-ALTER TABLE `airport`
-  ADD CONSTRAINT `airport_ibfk_1` FOREIGN KEY (`ville_id`) REFERENCES `ville` (`id`);
-
---
--- Contraintes pour la table `gare`
---
-ALTER TABLE `gare`
-  ADD CONSTRAINT `gare_ibfk_1` FOREIGN KEY (`ville_id`) REFERENCES `ville` (`id`);
+ALTER TABLE `ville`
+  ADD CONSTRAINT `ville_ibfk_1` FOREIGN KEY (`pays_id`) REFERENCES `pays` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
