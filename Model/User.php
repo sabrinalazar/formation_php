@@ -9,7 +9,7 @@ class User {
     }
 
     public function getPseudo() {
-        return $this->login;
+        return $this->pseudo;
     }
 
     public function getPwd() {
@@ -21,11 +21,11 @@ class User {
         return $this;
     }
 
-    public function setPseudo(string $login): self {
-        if (strlen($login) >= 2)
-            $this->login = $login;
+    public function setPseudo(string $pseudo): self {
+        if (strlen($pseudo) >= 2)
+            $this->pseudo = $pseudo;
         else
-            $this->erreurs[] = 'login :(';
+            $this->erreurs[] = 'pseudo :(';
         return $this;
     }
 
