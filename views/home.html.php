@@ -86,7 +86,7 @@
                                     <div class="card-body">
                                         <p class="card-text">De par sa proximité géographique, historique, culturelle, mais aussi humaine, l’Algérie est un pays auquel se sentent attachés beaucoup de Français. Ce voisin d’en face reste pourtant assez méconnu. Après une décennie noire pendant laquelle le tourisme fut mis entre parenthèses, l’Algérie ouvre ses portes et nous invite à explorer ses contrées magnifiques....</p>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">ff
+                                            <div class="btn-group">
                                                 <button type="button" class="btn btn-sm btn-outline-secondary">Visiter</button>
                                                 <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
                                             </div>
